@@ -24,7 +24,7 @@ After her above compare and exchange steps, we get two bitonic sequences in the 
 We repeat the same process within two bitonic sequences and we get four bitonic sequences of length n/4 such that all elements of the leftmost bitonic sequence are smaller and all elements of the rightmost. See sixth stage in below diagram, arrays is {2, 1, 3, 4, 6, 5, 7, 8}. 
 If we repeat this process one more time we get 8 bitonic sequences of size n/8 which is 1. Since all these bitonic sequences are sorted and every bitonic sequence has one element, we get the sorted array.
 
-=============================================================================================
+============================================================================================
 Grail Sort:
 
 Divide the input array into blocks of size sqrt(n), where n is the length of the input array.
@@ -46,5 +46,6 @@ Call flip(arr, curr_size – 1)
 Radix Sort:
 
 The key idea behind Radix Sort is to exploit the concept of place value. It assumes that sorting numbers digit by digit will eventually result in a fully sorted list. Radix Sort can be performed using different variations, such as Least Significant Digit (LSD) Radix Sort or Most Significant Digit (MSD) Radix Sort.
+
 ============================================================================================
 
