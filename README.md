@@ -1,5 +1,5 @@
 # sort-algos
-============================================================================================
+===========================================================================
 Counting Sort:
 
 Declare an auxiliary array countArray[] of size max(inputArray[])+1 and initialize it with 0.
@@ -8,7 +8,7 @@ Calculate the prefix sum at every index of array inputArray[].
 Create an array outputArray[] of size N.
 Traverse array inputArray[] from end and update outputArray[ countArray[ inputArray[i] ] – 1] = inputArray[i]. Also, update countArray[ inputArray[i] ] = countArray[ inputArray[i] ]- – .
 
-============================================================================================
+===========================================================================
 Bitonic Sort:
 
 Bitonic sequence is created.
@@ -24,7 +24,7 @@ After her above compare and exchange steps, we get two bitonic sequences in the 
 We repeat the same process within two bitonic sequences and we get four bitonic sequences of length n/4 such that all elements of the leftmost bitonic sequence are smaller and all elements of the rightmost. See sixth stage in below diagram, arrays is {2, 1, 3, 4, 6, 5, 7, 8}. 
 If we repeat this process one more time we get 8 bitonic sequences of size n/8 which is 1. Since all these bitonic sequences are sorted and every bitonic sequence has one element, we get the sorted array.
 
-============================================================================================
+===========================================================================
 Grail Sort:
 
 Divide the input array into blocks of size sqrt(n), where n is the length of the input array.
@@ -32,7 +32,7 @@ Sort each block using a comparison-based sorting algorithm.
 Merge the sorted blocks into a single sorted array using an algorithm similar to merge sort.
 Repeat steps 2 and 3 until all blocks have been merged into a single sorted array.
 
-============================================================================================
+===========================================================================
 
 Pancake Sort:
 
@@ -42,10 +42,10 @@ Find index of the maximum element in arr[0 to curr_szie-1]. Let the index be ‘
 Call flip(arr, mi)
 Call flip(arr, curr_size – 1)
 
-============================================================================================
+===========================================================================
 Radix Sort:
 
 The key idea behind Radix Sort is to exploit the concept of place value. It assumes that sorting numbers digit by digit will eventually result in a fully sorted list. Radix Sort can be performed using different variations, such as Least Significant Digit (LSD) Radix Sort or Most Significant Digit (MSD) Radix Sort.
 
-============================================================================================
+===========================================================================
 
