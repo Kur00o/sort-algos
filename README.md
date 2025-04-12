@@ -53,3 +53,32 @@ The key idea behind Radix Sort is to exploit the concept of place value. It assu
 
 ===========================================================================
 
+Spaghetti Sort:
+
+Simulate the lengths of the elements using spaghetti sticks or analogous representations. Each stick represents a number. Drop the spaghetti sticks vertically against a surface where they stand on one end. The longest stick (the most significant number) will stand tallest. Read the sticks from top to bottom to get a sorted array in descending order. For ascending order, reverse the process. This sort is more of a conceptual or physical sort and is not efficient for large digital datasets.
+
+===========================================================================
+
+Splaysort:
+
+Splaysort is based on the splay tree, a self-adjusting binary search tree. Insert all elements into a splay tree one by one. After every insertion, the inserted node is splayed to the root. Once all insertions are complete, perform an in-order traversal of the tree to retrieve the sorted sequence. It maintains adaptive performance on partially sorted data.
+
+===========================================================================
+
+Symmetric Compare Sort:
+
+Symmetric Compare Sort uses a recursive, symmetric comparison strategy. The array is divided symmetrically, and pairs of elements equidistant from the center are compared and potentially swapped. These comparisons are recursively applied to subarrays in a mirrored way. This sort maintains a balance of comparisons similar to bitonic sorting, useful for parallel processing.
+
+===========================================================================
+
+3-Way Merge Sort:
+
+The input array is divided into three equal parts instead of two (as in traditional merge sort). Recursively sort each of the three parts. Merge the three sorted parts using a 3-way merging process where the smallest of the front elements of each part is selected iteratively. This reduces recursion depth and can improve performance for specific data distributions.
+
+===========================================================================
+
+Factorial Sort:
+
+Factorial Sort is a theoretical sort that uses the concept of Lehmer codes and permutation indexes. For an array of length n, the position of each element in the sorted array is encoded using its factorial number system representation. Decode these positions to reconstruct the sorted array. Due to factorial time complexity (O(n!)), this sort is mostly academic and impractical for large datasets.
+
+===========================================================================
